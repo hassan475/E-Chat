@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/sv1"
+            android:layout_width="match_parent"
+            android:layout_height="448dp"
+            android:layout_below="@+id/tv1"
+            android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/llMsgCompose"
+        android:layout_width="fill_parent"
+        android:layout_height="80sp"
+        android:background="#f0eee7"
+        android:baselineAligned="false"
+        android:fitsSystemWindows="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/new_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/editext_border"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:textColor="#666666"
+            android:transcriptMode="alwaysScroll" />
+
+        <ImageButton
+            android:id="@+id/send_message"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_send" />
+
+        <ImageButton
+            android:id="@+id/emo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:src="@drawable/emoji1" />
+
+    </LinearLayout>
+
+</LinearLayout>
